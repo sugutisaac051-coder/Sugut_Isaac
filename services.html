@@ -5,45 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - 100SMILES Dental Care</title>
     <link rel="stylesheet" href="Css/styles.css">
-    <style>
-        .service-card-with-image {
-            background: white;
-            padding: 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            overflow: hidden;
-        }
-        .service-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .service-content {
-            padding: 1.5rem;
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">100SMILES Dental Care</div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="team.html">Our Team</a></li>
+                <li><a href="booking.html">Book Online</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <section class="hero">
-            <h1>Our Dental Services</h1>
-            <p>Comprehensive care for your entire family's dental needs</p>
+            <h1>Our Dental Services & Technologies</h1>
+            <p>Comprehensive care with cutting-edge technology for your entire family</p>
         </section>
 
         <section class="section">
-            <h2 class="section-title">Comprehensive Dental Care</h2>
+            <h2 class="section-title">Comprehensive Dental Services</h2>
             <div class="services-grid">
                 <div class="service-card-with-image">
                     <img src="Images/Images/AdobeStock_298640195.jpeg" alt="Family Dentistry" class="service-image">
@@ -104,6 +88,36 @@
             </div>
         </section>
 
+        <section id="technologies" class="section technologies-section">
+            <h2 class="section-title">Advanced Dental Technologies</h2>
+            <div class="technologies-grid">
+                <div class="tech-card">
+                    <h3>🦷 Digital X-Rays</h3>
+                    <p>Our state-of-the-art digital X-ray system provides high-resolution images with significantly less radiation exposure compared to traditional X-rays.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>📷 Intraoral Cameras</h3>
+                    <p>Detailed view of your mouth with high-quality images of teeth and gums for early detection and better treatment explanations.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>⚡ Laser Dentistry</h3>
+                    <p>Minimally invasive procedures with reduced pain and faster healing times for gum disease therapy and cavity detection.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>💻 CAD/CAM Technology</h3>
+                    <p>Create precise custom dental restorations like crowns, bridges, and veneers in a single visit for perfect fit and natural appearance.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>🖨️ 3D Printing</h3>
+                    <p>Accurate dental models, surgical guides, and custom appliances for precise treatment planning and improved outcomes.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>📱 Teledentistry</h3>
+                    <p>Virtual consultations from home to assess dental concerns, provide professional advice, and develop treatment plans.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="announcements">
             <h2>Annual Dental Check-Up Package</h2>
             <p>Our comprehensive Annual Dental Check-Up includes:</p>
@@ -115,9 +129,10 @@
                 <li>Nutritional Guidance for maintaining healthy teeth</li>
                 <li>Blood Tests or Laboratory Work if necessary</li>
             </ul>
-            <p><strong>Special Offer:</strong> 10% discount until March 31st!</p>
-            <a href="mailto:admin@100smilesdentalcare.com.au" class="btn">Book Your Check-Up</a>
+            <p><strong>Special Offer:</strong> 10% discount until April 30th!</p>
+            <a href="booking.html" class="btn">Book Your Check-Up</a>
         </section>
+        
     </main>
 
     <footer>
@@ -126,5 +141,12 @@
             <p>33 Fantail Street, Razole, Queensland | Phone: 07 5000 5599</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+        });
+    </script>
 </body>
 </html>

@@ -10,10 +10,12 @@
     <header>
         <nav class="container">
             <div class="logo">100SMILES Dental Care</div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="team.html">Our Team</a></li>
+                <li><a href="booking.html">Book Online</a></li>
             </ul>
         </nav>
     </header>
@@ -44,6 +46,13 @@
                 </div>
                 
                 <div class="team-member">
+                    <img src="Images/Staff/Staff/Dr. Emily Carter.jpeg" alt="Dr. Emily Carter">
+                    <h3>Dr. Emily Carter</h3>
+                    <p class="role">Pediatric Dentist</p>
+                    <p>Emily is a dedicated Pediatric Dentist with a passion for children's dental health. She brings a wealth of knowledge and a gentle approach to her practice, ensuring that children receive the best care in a comforting environment.</p>
+                </div>
+                
+                <div class="team-member">
                     <img src="Images/Staff/Staff/Richard Attam.jpeg" alt="Richard Attam">
                     <h3>Richard Attam</h3>
                     <p class="role">Dental Hygienist (BDS)</p>
@@ -62,16 +71,24 @@
         <section class="announcements">
             <h2>Ready to Schedule Your Visit?</h2>
             <p>Our team is here to provide you with exceptional dental care in a comfortable environment.</p>
-            <a href="tel:0750005599" class="btn">Call Us: 07 5000 5599</a>
-            <a href="mailto:admin@100smilesdentalcare.com.au" class="btn btn-secondary">Email Us</a>
+            <div class="appointment-buttons">
+                <a href="booking.html" class="btn">Book Online & Save 25%</a>
+                <a href="tel:0750005599" class="btn btn-secondary">Call Us: 07 5000 5599</a>
+            </div>
         </section>
 
         <section class="contact-info">
             <h3>Clinic Information</h3>
-            <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
-            <p><strong>Phone:</strong> 07 5000 5599 | <strong>Fax:</strong> 07 4567 9999</p>
-            <p><strong>Email:</strong> admin@100smilesdentalcare.com.au</p>
-            <p><strong>Hours:</strong> Monday-Friday: 8:30am-6:30pm, Saturday-Sunday: 8:30am-1pm</p>
+            <div class="contact-grid">
+                <div>
+                    <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
+                    <p><strong>Phone:</strong> 07 5000 5599 | <strong>Fax:</strong> 07 4567 9999</p>
+                </div>
+                <div>
+                    <p><strong>Email:</strong> admin@100smilesdentalcare.com.au</p>
+                    <p><strong>Hours:</strong> Monday-Friday: 8:30am-6:30pm, Saturday-Sunday: 8:30am-1pm</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -81,5 +98,12 @@
             <p>33 Fantail Street, Razole, Queensland | Phone: 07 5000 5599</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+        });
+    </script>
 </body>
 </html>

@@ -10,10 +10,12 @@
     <header>
         <nav class="container">
             <div class="logo">100SMILES Dental Care</div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="team.html">Our Team</a></li>
+                <li><a href="booking.html">Book Online</a></li>
             </ul>
         </nav>
     </header>
@@ -22,8 +24,10 @@
         <div class="container">
             <h1>Your Trusted Family Dentist in Razole</h1>
             <p>Over 30 years of providing compassionate dental care for all ages</p>
-            <a href="tel:0750005599" class="btn">Call Now: 07 5000 5599</a>
-            <a href="services.html" class="btn btn-secondary">View Our Services</a>
+            <div class="hero-buttons">
+                <a href="tel:0750005599" class="btn">Call Now: 07 5000 5599</a>
+                <a href="booking.html" class="btn btn-secondary">Book Online & Get 25% Off</a>
+            </div>
         </div>
     </section>
 
@@ -31,51 +35,87 @@
         <section class="section">
             <h2 class="section-title">Welcome to 100SMILES Dental Care</h2>
             <p>For over three decades, we've been serving the Razole community with comprehensive dental care for the entire family. From your child's first dental visit to routine check-ups and advanced treatments, our experienced team is dedicated to keeping your smile healthy and beautiful.</p>
+            
+            <p>We're proud to introduce our new <strong>online booking system</strong> and <strong>cutting-edge dental technologies</strong> to provide you with the best possible care.</p>
         </section>
 
         <section class="features">
             <div class="feature-card">
-                <h3>Family-Friendly Care</h3>
+                <h3>👨‍👩‍👧‍👦 Family-Friendly Care</h3>
                 <p>We provide gentle, compassionate dental care for patients of all ages, from young children to seniors.</p>
             </div>
             <div class="feature-card">
-                <h3>Experienced Team</h3>
-                <p>With over 50 years of combined experience, our dental professionals are experts in their fields.</p>
+                <h3>🦷 Advanced Technology</h3>
+                <p>Digital X-Rays, Laser Dentistry, CAD/CAM Technology and more for precise, comfortable treatments.</p>
             </div>
             <div class="feature-card">
-                <h3>Modern Facility</h3>
-                <p>Our state-of-the-art clinic in Razole is equipped with the latest dental technology for your comfort.</p>
+                <h3>💻 Online Booking</h3>
+                <p>Book your appointments conveniently online and get 25% discount on your next visit!</p>
             </div>
         </section>
 
         <section class="announcements">
-            <h2>Special Offers</h2>
+            <h2>🎉 Special Offers & Events</h2>
             <div class="announcement-item">
-                <h3>🎉 20% Off Your First Visit!</h3>
-                <p>New patients receive 20% discount when you book through email.</p>
+                <h3>25% Off Your Next Visit!</h3>
+                <p>Book through our online booking form and receive 25% discount on your next dental visit.</p>
             </div>
             <div class="announcement-item">
-                <h3>⏰ Limited Time: 10% Off Annual Check-Up</h3>
-                <p>Until March 31st, enjoy 10% discount on your comprehensive Annual Dental Check-Up package.</p>
+                <h3>🆓 Free Dental Checkup Event</h3>
+                <p>Join us for a free dental checkup on Saturday 5th July, starting at 9 am. Limited slots available!</p>
             </div>
-            <a href="mailto:admin@100smilesdentalcare.com.au" class="btn">Book Your Appointment</a>
+            <div class="announcement-item">
+                <h3>⏰ 10% Off Annual Check-Up</h3>
+                <p>Until April 30th, enjoy 10% discount on your comprehensive Annual Dental Check-Up package.</p>
+            </div>
+            <div class="announcement-buttons">
+                <a href="booking.html" class="btn">Book Online Now</a>
+                <a href="tel:0713275599" class="btn btn-secondary">Call: 07 1327 5599</a>
+            </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title">Dental Health Tips</h2>
-            <div class="feature-card">
-                <h3>The Importance of Regular Dental Check-Ups</h3>
-                <p>Regular dental visits are crucial for maintaining optimal oral health. They help prevent serious dental issues and ensure early detection of potential problems. Our comprehensive check-ups include thorough examinations, cleanings, and personalized advice for your dental care routine.</p>
-                <p>Don't wait for dental problems to arise - preventive care is the key to a healthy, beautiful smile that lasts a lifetime.</p>
+            <h2 class="section-title">Latest Dental Technologies</h2>
+            <div class="tech-preview">
+                <p>We've integrated state-of-the-art dental technologies to enhance your treatment experience:</p>
+                <ul>
+                    <li>Digital X-Rays with less radiation</li>
+                    <li>Laser Dentistry for minimal discomfort</li>
+                    <li>CAD/CAM same-day restorations</li>
+                    <li>Teledentistry virtual consultations</li>
+                </ul>
+                <a href="services.html#technologies" class="btn">View All Technologies</a>
             </div>
         </section>
 
         <section class="contact-info">
-            <h3>Contact Information</h3>
-            <p><strong>Phone:</strong> 07 5000 5599</p>
-            <p><strong>Email:</strong> admin@100smilesdentalcare.com.au</p>
-            <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
-            <p><strong>Hours:</strong> Mon-Fri: 8:30am-6:30pm, Sat-Sun: 8:30am-1pm</p>
+            <h3>📞 Contact Information</h3>
+            <div class="map-container">
+                <h3>📍 Find Us</h3>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.168156284263!2d145.462341!3d-16.485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDI5JzA2LjAiUyAxNDXCsDI3JzQ0LjQiRQ!5e0!3m2!1sen!2sau!4v1698765432100!5m2!1sen!2sau" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
+            </div>
+            <div class="contact-grid">
+                <div>
+                    <p><strong>Phone:</strong> 07 5000 5599</p>
+                    <p><strong>Email:</strong> admin@100smilesdentalcare.com.au</p>
+                </div>
+                <div>
+                    <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
+                    <p><strong>Hours:</strong> Mon-Fri: 8:30am-6:30pm, Sat-Sun: 8:30am-1pm</p>
+                </div>
+            </div>
+            
         </section>
     </main>
 
@@ -85,5 +125,12 @@
             <p>33 Fantail Street, Razole, Queensland | Phone: 07 5000 5599</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+        });
+    </script>
 </body>
 </html>
